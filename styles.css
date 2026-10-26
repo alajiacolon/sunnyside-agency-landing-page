@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+    --font-1: 900 56px/125% "Fraunces", serif;
+    --font-2: 900 42px/125% "Fraunces", serif;
+    --font-3: 900 40px/125% "Fraunces", serif;
+    --font-4: 900 32px/125% "Fraunces", serif;
+    --font-5: 900 28px/125% "Fraunces", serif;
+    --font-6: 900 20px/125% "Fraunces", serif;
+    --font-7: 900 18px/125% "Fraunces", serif;
+    --font-8: 900 15px/165% "Barlow", sans-serif;
+    --font-9: 600 20px/125% "Barlow", sans-serif;
+    --font-10: 600 18px/165% "Barlow", sans-serif;
+    --font-11: 600 16px/170% "Barlow", sans-serif;
+    --font-12: 600 14px/180% "Barlow", sans-serif;
+}
+
+body {
+	margin: 0;
+    background-color: #fff;
+    font-size: 18px;
+    color: black;
+}
+
+/* mobile columns */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.header-section {
+    background-image: url(./images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 538px;
+    background-position: center;
+    padding: 7%;
+}
+.logo-nav {
+    display: flex;
+    justify-content: space-between
+}
+.logo-nav nav {
+    display: none;
+}
+.menu {
+    appearance: none;
+    background: transparent;
+    border: 0; 
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font: var(--font-2);
+    letter-spacing: 9px;
+    color: #fff;
+    margin-top: 20%;
+}
+header img {
+    display: flex;
+    width: 40px;
+}
